@@ -38,7 +38,7 @@ $ npm install
 
 ```bash
 # development
-$ npm run start
+$ npm run start OR ts-node -r tsconfig-paths/register src/main.ts
 
 # watch mode
 $ npm run start:dev
@@ -46,6 +46,22 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+## Object Debugger in vs code
+#file launch.json
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Nest API",
+            "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+            "args": ["${workspaceFolder}/src/main.ts"],
+            "autoAttachChildProcesses": true
+        }
+    ]
+}
 
 ## Test
 
