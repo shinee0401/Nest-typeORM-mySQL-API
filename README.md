@@ -50,7 +50,8 @@ $ npm run start:prod
 #file launch.json
 {
     "version": "0.2.0",
-    "configurations": [
+    "configurations":
+    [
 
         {
             "type": "node",
