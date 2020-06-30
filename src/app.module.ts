@@ -8,11 +8,11 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     TodoModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
+      host: 'remotemysql.com',
       port: 3306,
-      username: 'root',
-      password: '',
-      database: 'hellonest',
+      username: '7hdfDVdqdt',
+      password: 'OAYFJW3l1z',
+      database: '7hdfDVdqdt',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     })
